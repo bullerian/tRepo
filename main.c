@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+int isEven(int number);
+int applyBitMask(int number, int mask);
+
 int main(void)
 {
   int testArr[]={0,2,5,13,44,57,63,90};
@@ -18,4 +21,7 @@ int isEven(int number)
   return (number & 1);
 }
 
-
+int applyBitMask(int number, int mask)
+{
+  return (number & mask);
+}
